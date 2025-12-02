@@ -12,7 +12,7 @@ dist/
 build/
 
 # Machine Learning Models
-*.joblib
+# *.joblib
 backend/data/
 
 # Node

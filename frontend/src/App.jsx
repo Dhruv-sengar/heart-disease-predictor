@@ -164,7 +164,7 @@ function App() {
     };
 
     return (
-        <div className={`h-screen w-full overflow-hidden transition-colors duration-500 ${darkMode ? 'bg-[#050505] text-gray-100' : 'bg-gray-50 text-gray-900'} flex flex-col font-sans selection:bg-rose-500/30`}>
+        <div className={`min-h-screen w-full lg:h-screen lg:overflow-hidden transition-colors duration-500 ${darkMode ? 'bg-[#050505] text-gray-100' : 'bg-gray-50 text-gray-900'} flex flex-col font-sans selection:bg-rose-500/30`}>
 
             {/* Navbar - Transparent & Floating */}
             <nav className="absolute top-0 left-0 right-0 z-50 px-8 py-6">
@@ -204,10 +204,10 @@ function App() {
             </nav>
 
             {/* Main Content */}
-            <div className="flex-1 container mx-auto px-8 pt-28 pb-8 min-h-0 flex flex-col lg:flex-row gap-8">
+            <div className="flex-1 container mx-auto px-4 lg:px-8 pt-24 lg:pt-28 pb-8 min-h-0 flex flex-col lg:flex-row gap-8">
 
                 {/* Left Panel: Form */}
-                <div className="lg:w-2/3 h-full flex flex-col">
+                <div className="lg:w-2/3 h-auto lg:h-full flex flex-col min-h-[600px] lg:min-h-0">
                     <div className="bg-white/80 dark:bg-[#0f0f0f]/80 backdrop-blur-2xl rounded-[2.5rem] p-8 shadow-2xl shadow-gray-200/50 dark:shadow-black/60 border border-white/40 dark:border-white/5 h-full flex flex-col relative overflow-hidden group">
 
                         {/* Decorative Gradient Blob */}
@@ -288,7 +288,7 @@ function App() {
                 </div>
 
                 {/* Right Panel: Visuals & Results */}
-                <div className="lg:w-1/3 h-full flex flex-col space-y-6">
+                <div className="lg:w-1/3 h-auto lg:h-full flex flex-col space-y-6 min-h-[500px] lg:min-h-0">
                     {/* Visual Container */}
                     <div className="flex-1 bg-white/80 dark:bg-[#0f0f0f]/80 backdrop-blur-2xl rounded-[2.5rem] p-8 shadow-2xl shadow-gray-200/50 dark:shadow-black/60 border border-white/40 dark:border-white/5 flex flex-col items-center justify-center relative overflow-hidden">
                         <div className="absolute inset-0 bg-grid-slate-200/50 dark:bg-grid-slate-800/50 [mask-image:radial-gradient(ellipse_at_center,white,transparent)] pointer-events-none" />
