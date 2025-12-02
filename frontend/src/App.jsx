@@ -153,7 +153,8 @@ function App() {
             const payload = Object.fromEntries(
                 Object.entries(formData).map(([k, v]) => [k, parseFloat(v)])
             );
-            const response = await axios.post('http://localhost:8000/predict', payload);
+            const apiUrl = import.meta.env.VITE_API_URL || 'https://heart-disease-predictor-alqg.onrender.com';
+            const response = await axios.post(`${apiUrl}/predict`, payload);
             setResult(response.data);
         } catch (err) {
             console.error(err);

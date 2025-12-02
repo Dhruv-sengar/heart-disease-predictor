@@ -12,12 +12,6 @@ An AI-powered heart disease prediction system with a beautiful, modern UI built 
 
 ## Tech Stack
 
-### Screenshots
-
-<!-- Add screenshots here -->
-![Home Dashboard](home_dashboard.png)
-![Risk Analysis](risk_analysis.png)
-
 ### Frontend
 - React 19
 - Vite
